@@ -31,12 +31,16 @@ export default function Contact() {
 
   return (
     <div className="w-full h-screen flex bg-mygreen">
+      
       <div className="w-full  z-10 relative h-full flex items-center sm:items-center justify-center ">
+       
         <form
           className="glass p-3 sm:p-7 rounded-sm shadow"
           onSubmit={sendEmail}
           ref={form}
         >
+         
+
           <div className="flex-col my-1 ">
             <label className="w-full  text-white font-semibold ">Name *</label>
             <input
@@ -80,10 +84,10 @@ export default function Contact() {
         </form>
       </div>
 
-      <ParallaxLayer offset={2} speed={1.5}>
+      <ParallaxLayer offset={2} speed={0}>
         <>
           <div className="w-full h-1/6 py-5 text-center">
-            <h2 className="text-6xl md:mb-10 text-white font-light">
+            <h2 className="text-2xl sm:text-5xl md:mb-10 text-white font-light">
               <span className="text-myorange">S</span>hare
               <span className="text-myorange">Y</span>our
               <span className="text-myorange pl-2">T</span>houghts
@@ -92,9 +96,7 @@ export default function Contact() {
         </>
       </ParallaxLayer>
 
-                      
-
-      <ParallaxLayer offset={2} speed={2}>
+      <ParallaxLayer offset={2} speed={1.5}>
         <>
           <div className="w-full h-screen  flex   z-50">
             <img
@@ -128,7 +130,7 @@ export default function Contact() {
           </div>
         </>
       </ParallaxLayer>
-      <ParallaxLayer offset={2} speed={1.5}>
+      <ParallaxLayer offset={2} speed={2}>
         <>
           <div className="w-full h-screen  flex   z-50">
             <img

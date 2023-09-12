@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { ParallaxLayer } from "@react-spring/parallax";
 import logo from "../assets/logo.png";
 
 import table from "../assets/table.png";
@@ -17,15 +17,16 @@ export default function Header() {
         className={`bg-transparent fixed z-50  top-0 left-0 right-0 flex items-center justify-between px-2 sm:px-16 md:px-30 lg:px-40 py-3 sm:py-5 text-mywhite `}
       >
         <div>
-          {/* <img src={logo} alt="logo" className="h-[40px] sm:h-[50px]" /> */}
-          <h2 className="text-2xl font-semibold text-myblack">PC Builders</h2>
+          <img src={logo} alt="logo" className="h-[40px] sm:h-[50px] md:h-[60px]" />
+          {/* <h2 className="text-2xl font-semibold text-myblack">PC Builders</h2> */}
         </div>
         <div className="">
           <a
-            className="font-bold hover:underline  sm:px-2 py-1  sm:text-xl  rounded-lg"
+            className=" px-2 py-1 text-sm sm:text-base md:text-lg sm:px-4 sm:py-2 shadow-2xl rounded-sm bg-myblack"
             href="https://wa.me/+919025380083"
             target="_blank"
             rel="noreferrer"
+            // href="/"
           >
             Sales Enquiry
           </a>
@@ -50,7 +51,7 @@ export default function Header() {
           </div>
         </div>
       </div> */}
-      <ParallaxLayer offset={0} speed={0.5}>
+      <ParallaxLayer offset={0} speed={0.1}>
         <>
           <div className="w-full h-full">
             <img
@@ -109,7 +110,7 @@ export default function Header() {
         <>
           <div className="w-full h-full ">
             <div className="w-full h-full text-center flex justify-center">
-              <h1 className="text-6xl sm:text-7xl md:text-9xl top-20 sm:top-44  md:top-32 absolute  text-white font-bold">
+              <h1 className="text-6xl sm:text-7xl md:text-9xl top-20 sm:top-48  md:top-36 absolute  text-white font-bold">
                 Build Your Own PC
               </h1>
             </div>

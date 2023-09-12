@@ -4,7 +4,6 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import about from "../assets/about.jpg";
 
 export default function About() {
-
   const parallax = useRef(null);
 
   const scroll = (to) => {
@@ -13,14 +12,13 @@ export default function About() {
     }
   };
 
-
   return (
     <div className="w-full h-screen bg-myblack ">
       <ParallaxLayer offset={1}>
         <>
           <Parallax ref={parallax} horizontal pages={2} className="scroll">
             <ParallaxLayer offset={0} speed={2}>
-              <div className="grid w-full h-auto grid-cols-1  sm:grid-cols-2 ">
+              <div className="grid w-full h-auto grid-cols-1  sm:grid-cols-2  ">
                 <div className="w-full  h-full flex p-2 sm:pt-20 md:pt-5  justify-center ">
                   <img
                     className="h-full  sm:h-4/5 md:h-3/4 rounded-md "
@@ -33,15 +31,16 @@ export default function About() {
                     Who we are ?
                   </h2>
                   <p className="text-sm text-mywhite sm:text-lg  tracking-wider leading-5 md:leading-10 ">
-                    Lorem ipsum dolor sit amet, consectetur adip incididunt ut labore et dolore magna aliqu sapient et 
-                    labore et dolor sit amet, consectetur adip incididunt ut
-                    labore et dolor sit amet ut labore et dolor sit amet ut
-                    labore et dolor sit amet Lorem ipsum dolor sit amet,
-                    consectetur adip incididunt ut labore Lorem ipsum dolor sit
+                    Lorem ipsum dolor sit amet, consectetur adip incididunt ut
+                    labore et dolore magna aliqu sapient et labore et dolor sit
                     amet, consectetur adip incididunt ut labore et dolor sit
-                    amet, consectetur adip incididunt ut labore et dolor Lorem
-                    ipsum dolor sit amet, consectetur adip incididunt ut labore
-                    et dolor sit amet, consectetur adip incididunt ut.
+                    amet ut labore et dolor sit amet ut labore et dolor sit amet
+                    Lorem ipsum dolor sit amet, consectetur adip incididunt ut
+                    labore Lorem ipsum dolor sit amet, consectetur adip
+                    incididunt ut labore et dolor sit amet, consectetur adip
+                    incididunt ut labore et dolor Lorem ipsum dolor sit amet,
+                    consectetur adip incididunt ut labore et dolor sit amet,
+                    consectetur adip incididunt ut.
                   </p>
                   <div className="flex items-center justify-between mt-7">
                     <p className="text-2xl sm:text-5xl  mb-2 md:mb-10 text-myorange font-light">
@@ -54,27 +53,22 @@ export default function About() {
                 </div>
               </div>
             </ParallaxLayer>
-            <ParallaxLayer className="bg-myorange" offset={1}>
+            <ParallaxLayer className="bg-myblack" offset={1}>
               <div className="grid w-full  h-full grid-cols-2">
-
-
                 <div className="p-1 sm:p-2 md:p-10 w-full">
-                  <div className="p-1 sm:p-3 h-1/2 w-full bg-mygray">
+                  <div className="p-1 sm:p-2 h-1/2 w-full bg-mywhite">
                     <div className="about-pc-4 w-full h-full rounded-lg"></div>
                   </div>
-                  <div className="p-1 sm:p-3 h-1/2 w-full bg-mygray">
+                  <div className="p-1 sm:p-2 h-1/2 w-full bg-mywhite">
                     <div className="about-pc-5 w-full h-full rounded-lg"></div>
                   </div>
                 </div>
 
-
                 <div className="p-1 sm:p-2 md:p-10 w-full">
-                  <div className="p-1 sm:p-3 w-full h-full bg-mygray">
+                  <div className="p-1 sm:p-2 w-full h-full bg-mywhite">
                     <div className="about-pc-6 w-full h-full rounded-lg"></div>
                   </div>
                 </div>
-
-
               </div>
             </ParallaxLayer>
           </Parallax>
