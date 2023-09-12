@@ -1,13 +1,163 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.about-pc-3 {
+  background-image: url("./assets/about/about-pc-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.about-pc-4 {
+  background-image: url("./assets/about/about-pc-4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about-pc-5 {
+  background-image: url("./assets/about/about-pc-5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-pc-1 {
+  background-image: url("./assets/about/about-pc.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-pc-2 {
+  background-image: url("./assets/about/about-pc-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about-pc-6 {
+  background-image: url("./assets/about/about-pc-6.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.glass-text {
+  font-weight: bold;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.1)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.27);
+   
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.3px);
+  -webkit-backdrop-filter: blur(6.3px);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+}
+
+
+.shadow {
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.32);
+}
+
+.scroll::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome and Safari */
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Hide scrollbar thumb in Chrome and Safari */
+}
+
+.scroll::-webkit-scrollbar-track {
+  background-color: transparent; /* Hide scrollbar track in Chrome and Safari */
+}
+
+/* Hide scrollbar in Firefox */
+.scroll.dark {
+  scrollbar-color: transparent transparent; /* Thumb color and track color (in this case, both transparent) */
+}
+
+
+.wave{
+  display: block;
+  position: relative;
+  height: 180px;
+  width: 100%;
+  background: #00ADB5;
+  text-align: center;
+}
+
+.wave:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 300px;
+  background-color:  #222831;
+  right: -25%;
+  top: 120px;
+  margin-top: 40px;
+  
+}
+
+.wave:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 300px;
+  background-color: #00ADB5;
+  left: -25%;
+  top: -140px;
+  clip-path: ellipse(100% 15% at -15% 100%);
+  margin-top: 40px;
+}
+
+
+.wave-bottom{
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  background:  #00ADB5;
+  text-align: center;
+}
+
+.wave-bottom:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 300px;
+  background-color: #222831;
+  right: -30%;
+  bottom: 105px;
+  margin-top: 50px;
+  
+}
+
+.wave-bottom:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  left: -37%;
+  bottom:130px;
+  clip-path:ellipse(100% 15% at -15% 100%);
+  margin-top: 40px;
 }
