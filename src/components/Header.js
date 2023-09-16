@@ -2,6 +2,7 @@ import React from "react";
 
 import { ParallaxLayer } from "@react-spring/parallax";
 import logo from "../assets/logo.png";
+import pclogo from "../assets/pcbuilders.png";
 
 import table from "../assets/table.png";
 import pc from "../assets/pc.png";
@@ -17,16 +18,19 @@ export default function Header() {
         className={`bg-transparent fixed z-50  top-0 left-0 right-0 flex items-center justify-between px-2 sm:px-16 md:px-30 lg:px-40 py-3 sm:py-5 text-mywhite `}
       >
         <div>
-          <img src={logo} alt="logo" className="h-[40px] sm:h-[50px] md:h-[60px]" />
+          <img
+            src={pclogo}
+            alt="logo"
+            className="h-[40px] sm:h-[50px] md:h-[60px]"
+          />
           {/* <h2 className="text-2xl font-semibold text-myblack">PC Builders</h2> */}
         </div>
         <div className="">
           <a
             className=" px-2 py-1 text-sm sm:text-base md:text-lg sm:px-4 sm:py-2 shadow-2xl rounded-sm bg-myblack"
-            href="https://wa.me/+919025380083"
             target="_blank"
             rel="noreferrer"
-            // href="/"
+            href="/"
           >
             Sales Enquiry
           </a>
